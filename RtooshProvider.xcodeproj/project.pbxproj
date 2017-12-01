@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		129C6A78B94DC4807371E2DA /* Pods_RtooshProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1B79F7EC9099D250887F59 /* Pods_RtooshProvider.framework */; };
+		1806F5AA1FCD27DC00839FD1 /* CircleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806F5A91FCD27DB00839FD1 /* CircleLabel.swift */; };
+		1806F5AD1FCD2F9200839FD1 /* ID'sViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806F5AC1FCD2F9200839FD1 /* ID'sViewController.swift */; };
+		1806F5AF1FCD2FAE00839FD1 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806F5AE1FCD2FAE00839FD1 /* ScheduleViewController.swift */; };
+		1806F5B11FCD2FC200839FD1 /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806F5B01FCD2FC200839FD1 /* ServiceViewController.swift */; };
+		1806F5B31FCD2FD900839FD1 /* PublicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806F5B21FCD2FD900839FD1 /* PublicInfoViewController.swift */; };
+		1806F5B51FCD358000839FD1 /* SimpleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806F5B41FCD358000839FD1 /* SimpleTextField.swift */; };
+		1806F5B81FCD391700839FD1 /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806F5B71FCD391700839FD1 /* BackView.swift */; };
+		1806F5BA1FCD474E00839FD1 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806F5B91FCD474E00839FD1 /* RadioButton.swift */; };
+		1806F5BE1FCD538500839FD1 /* SceduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806F5BC1FCD538500839FD1 /* SceduleTableViewCell.swift */; };
+		1806F5BF1FCD538500839FD1 /* SceduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1806F5BD1FCD538500839FD1 /* SceduleTableViewCell.xib */; };
+		18B208771FCFB8BC00A84239 /* SreviceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B208751FCFB8BC00A84239 /* SreviceListTableViewCell.swift */; };
+		18B208781FCFB8BC00A84239 /* SreviceListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B208761FCFB8BC00A84239 /* SreviceListTableViewCell.xib */; };
+		18B2087A1FCFCFFA00A84239 /* ServiceHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B208791FCFCFFA00A84239 /* ServiceHeader.swift */; };
+		18B2087C1FCFD6FB00A84239 /* AddService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2087B1FCFD6FB00A84239 /* AddService.swift */; };
+		18D0353A1FCBD41200EE1F40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D035391FCBD41200EE1F40 /* AppDelegate.swift */; };
+		18D0353C1FCBD41200EE1F40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0353B1FCBD41200EE1F40 /* ViewController.swift */; };
+		18D0353F1FCBD41300EE1F40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D0353D1FCBD41300EE1F40 /* Main.storyboard */; };
+		18D035411FCBD41300EE1F40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D035401FCBD41300EE1F40 /* Assets.xcassets */; };
+		18D035441FCBD41300EE1F40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D035421FCBD41300EE1F40 /* LaunchScreen.storyboard */; };
+		18D0354F1FCBFADE00EE1F40 /* Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18D0354C1FCBFADD00EE1F40 /* Bold.otf */; };
+		18D035501FCBFADE00EE1F40 /* avenir-lt-65-medium-5969f31f07372.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18D0354D1FCBFADD00EE1F40 /* avenir-lt-65-medium-5969f31f07372.ttf */; };
+		18D035511FCBFADE00EE1F40 /* AvenirLTStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18D0354E1FCBFADE00EE1F40 /* AvenirLTStd-Light.otf */; };
+		18D035551FCBFC1700EE1F40 /* CustomLabel_bold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D035541FCBFC1700EE1F40 /* CustomLabel_bold.swift */; };
+		18D035571FCBFC3B00EE1F40 /* CustomLabel_Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D035561FCBFC3B00EE1F40 /* CustomLabel_Light.swift */; };
+		18D035591FCBFC5A00EE1F40 /* CustomLabel_Medium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D035581FCBFC5A00EE1F40 /* CustomLabel_Medium.swift */; };
+		18D0355C1FCC18EC00EE1F40 /* CustomButton_Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0355B1FCC18EC00EE1F40 /* CustomButton_Light.swift */; };
+		18D0355E1FCC195D00EE1F40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0355D1FCC195D00EE1F40 /* LoginViewController.swift */; };
+		18D035601FCC196B00EE1F40 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0355F1FCC196B00EE1F40 /* OTPViewController.swift */; };
+		18D035621FCC198800EE1F40 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D035611FCC198800EE1F40 /* RegisterViewController.swift */; };
+		18D035641FCC199400EE1F40 /* AccountStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D035631FCC199400EE1F40 /* AccountStatusViewController.swift */; };
+		18D035661FCC285E00EE1F40 /* SelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D035651FCC285E00EE1F40 /* SelectButton.swift */; };
+		18D035691FCC288F00EE1F40 /* ImageTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D035681FCC288F00EE1F40 /* ImageTextField.swift */; };
+		18D0356B1FCC409B00EE1F40 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0356A1FCC409B00EE1F40 /* OTPTextField.swift */; };
+		18D118F81FD1216700EE3ACF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D118F71FD1216700EE3ACF /* Media.xcassets */; };
+		18D118FA1FD13E6F00EE3ACF /* ScheduleTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D118F91FD13E6F00EE3ACF /* ScheduleTimeViewController.swift */; };
+		18D118FD1FD1411E00EE3ACF /* ScheduleTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D118FB1FD1411E00EE3ACF /* ScheduleTimeTableViewCell.swift */; };
+		18D118FE1FD1411E00EE3ACF /* ScheduleTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D118FC1FD1411E00EE3ACF /* ScheduleTimeTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05FA9F94FAFF3A0F4053095B /* Pods-RtooshProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RtooshProvider.release.xcconfig"; path = "Pods/Target Support Files/Pods-RtooshProvider/Pods-RtooshProvider.release.xcconfig"; sourceTree = "<group>"; };
+		1806F5A91FCD27DB00839FD1 /* CircleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLabel.swift; sourceTree = "<group>"; };
+		1806F5AC1FCD2F9200839FD1 /* ID'sViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ID'sViewController.swift"; sourceTree = "<group>"; };
+		1806F5AE1FCD2FAE00839FD1 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		1806F5B01FCD2FC200839FD1 /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
+		1806F5B21FCD2FD900839FD1 /* PublicInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicInfoViewController.swift; sourceTree = "<group>"; };
+		1806F5B41FCD358000839FD1 /* SimpleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTextField.swift; sourceTree = "<group>"; };
+		1806F5B71FCD391700839FD1 /* BackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
+		1806F5B91FCD474E00839FD1 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		1806F5BC1FCD538500839FD1 /* SceduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceduleTableViewCell.swift; sourceTree = "<group>"; };
+		1806F5BD1FCD538500839FD1 /* SceduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SceduleTableViewCell.xib; sourceTree = "<group>"; };
+		18B208751FCFB8BC00A84239 /* SreviceListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SreviceListTableViewCell.swift; sourceTree = "<group>"; };
+		18B208761FCFB8BC00A84239 /* SreviceListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SreviceListTableViewCell.xib; sourceTree = "<group>"; };
+		18B208791FCFCFFA00A84239 /* ServiceHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHeader.swift; sourceTree = "<group>"; };
+		18B2087B1FCFD6FB00A84239 /* AddService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddService.swift; sourceTree = "<group>"; };
+		18D035361FCBD41200EE1F40 /* RtooshProvider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RtooshProvider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D035391FCBD41200EE1F40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18D0353B1FCBD41200EE1F40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18D0353E1FCBD41300EE1F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18D035401FCBD41300EE1F40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18D035431FCBD41300EE1F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18D035451FCBD41300EE1F40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D0354C1FCBFADD00EE1F40 /* Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bold.otf; sourceTree = "<group>"; };
+		18D0354D1FCBFADD00EE1F40 /* avenir-lt-65-medium-5969f31f07372.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "avenir-lt-65-medium-5969f31f07372.ttf"; sourceTree = "<group>"; };
+		18D0354E1FCBFADE00EE1F40 /* AvenirLTStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Light.otf"; sourceTree = "<group>"; };
+		18D035541FCBFC1700EE1F40 /* CustomLabel_bold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel_bold.swift; sourceTree = "<group>"; };
+		18D035561FCBFC3B00EE1F40 /* CustomLabel_Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel_Light.swift; sourceTree = "<group>"; };
+		18D035581FCBFC5A00EE1F40 /* CustomLabel_Medium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel_Medium.swift; sourceTree = "<group>"; };
+		18D0355B1FCC18EC00EE1F40 /* CustomButton_Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton_Light.swift; sourceTree = "<group>"; };
+		18D0355D1FCC195D00EE1F40 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		18D0355F1FCC196B00EE1F40 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		18D035611FCC198800EE1F40 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		18D035631FCC199400EE1F40 /* AccountStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStatusViewController.swift; sourceTree = "<group>"; };
+		18D035651FCC285E00EE1F40 /* SelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectButton.swift; sourceTree = "<group>"; };
+		18D035681FCC288F00EE1F40 /* ImageTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTextField.swift; sourceTree = "<group>"; };
+		18D0356A1FCC409B00EE1F40 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		18D118F71FD1216700EE3ACF /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		18D118F91FD13E6F00EE3ACF /* ScheduleTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTimeViewController.swift; sourceTree = "<group>"; };
+		18D118FB1FD1411E00EE3ACF /* ScheduleTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTimeTableViewCell.swift; sourceTree = "<group>"; };
+		18D118FC1FD1411E00EE3ACF /* ScheduleTimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleTimeTableViewCell.xib; sourceTree = "<group>"; };
+		5F1B79F7EC9099D250887F59 /* Pods_RtooshProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RtooshProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD745DAB170B9B11ACD3CDD9 /* Pods-RtooshProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RtooshProvider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RtooshProvider/Pods-RtooshProvider.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18D035331FCBD41200EE1F40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				129C6A78B94DC4807371E2DA /* Pods_RtooshProvider.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1806F5AB1FCD2F2A00839FD1 /* Account_Status */ = {
+			isa = PBXGroup;
+			children = (
+				1806F5AC1FCD2F9200839FD1 /* ID'sViewController.swift */,
+				1806F5AE1FCD2FAE00839FD1 /* ScheduleViewController.swift */,
+				1806F5B01FCD2FC200839FD1 /* ServiceViewController.swift */,
+				1806F5B21FCD2FD900839FD1 /* PublicInfoViewController.swift */,
+				18D118F91FD13E6F00EE3ACF /* ScheduleTimeViewController.swift */,
+			);
+			path = Account_Status;
+			sourceTree = "<group>";
+		};
+		1806F5B61FCD390100839FD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1806F5B71FCD391700839FD1 /* BackView.swift */,
+				18B2087B1FCFD6FB00A84239 /* AddService.swift */,
+				18B208791FCFCFFA00A84239 /* ServiceHeader.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1806F5BB1FCD536000839FD1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1806F5BC1FCD538500839FD1 /* SceduleTableViewCell.swift */,
+				1806F5BD1FCD538500839FD1 /* SceduleTableViewCell.xib */,
+				18B208751FCFB8BC00A84239 /* SreviceListTableViewCell.swift */,
+				18B208761FCFB8BC00A84239 /* SreviceListTableViewCell.xib */,
+				18D118FB1FD1411E00EE3ACF /* ScheduleTimeTableViewCell.swift */,
+				18D118FC1FD1411E00EE3ACF /* ScheduleTimeTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		18D0352D1FCBD41200EE1F40 = {
+			isa = PBXGroup;
+			children = (
+				18D035381FCBD41200EE1F40 /* RtooshProvider */,
+				18D035371FCBD41200EE1F40 /* Products */,
+				6F0660BBE246565F9ED5FF42 /* Pods */,
+				6ACEB531C1F412FDB759951F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18D035371FCBD41200EE1F40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18D035361FCBD41200EE1F40 /* RtooshProvider.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18D035381FCBD41200EE1F40 /* RtooshProvider */ = {
+			isa = PBXGroup;
+			children = (
+				18D035521FCBFBA800EE1F40 /* Helper_View */,
+				18D0354B1FCBFA9B00EE1F40 /* Font */,
+				18D035391FCBD41200EE1F40 /* AppDelegate.swift */,
+				18D0353B1FCBD41200EE1F40 /* ViewController.swift */,
+				18D0355D1FCC195D00EE1F40 /* LoginViewController.swift */,
+				18D0355F1FCC196B00EE1F40 /* OTPViewController.swift */,
+				18D035611FCC198800EE1F40 /* RegisterViewController.swift */,
+				18D035631FCC199400EE1F40 /* AccountStatusViewController.swift */,
+				1806F5BB1FCD536000839FD1 /* Cell */,
+				1806F5AB1FCD2F2A00839FD1 /* Account_Status */,
+				18D0353D1FCBD41300EE1F40 /* Main.storyboard */,
+				18D035401FCBD41300EE1F40 /* Assets.xcassets */,
+				18D118F71FD1216700EE3ACF /* Media.xcassets */,
+				18D035421FCBD41300EE1F40 /* LaunchScreen.storyboard */,
+				18D035451FCBD41300EE1F40 /* Info.plist */,
+			);
+			path = RtooshProvider;
+			sourceTree = "<group>";
+		};
+		18D0354B1FCBFA9B00EE1F40 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				18D0354D1FCBFADD00EE1F40 /* avenir-lt-65-medium-5969f31f07372.ttf */,
+				18D0354E1FCBFADE00EE1F40 /* AvenirLTStd-Light.otf */,
+				18D0354C1FCBFADD00EE1F40 /* Bold.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		18D035521FCBFBA800EE1F40 /* Helper_View */ = {
+			isa = PBXGroup;
+			children = (
+				1806F5B61FCD390100839FD1 /* View */,
+				18D035671FCC286900EE1F40 /* TextField */,
+				18D0355A1FCC18C400EE1F40 /* Button */,
+				18D035531FCBFBB500EE1F40 /* Label */,
+			);
+			path = Helper_View;
+			sourceTree = "<group>";
+		};
+		18D035531FCBFBB500EE1F40 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				18D035541FCBFC1700EE1F40 /* CustomLabel_bold.swift */,
+				18D035561FCBFC3B00EE1F40 /* CustomLabel_Light.swift */,
+				18D035581FCBFC5A00EE1F40 /* CustomLabel_Medium.swift */,
+				1806F5A91FCD27DB00839FD1 /* CircleLabel.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		18D0355A1FCC18C400EE1F40 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				18D0355B1FCC18EC00EE1F40 /* CustomButton_Light.swift */,
+				18D035651FCC285E00EE1F40 /* SelectButton.swift */,
+				1806F5B91FCD474E00839FD1 /* RadioButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		18D035671FCC286900EE1F40 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				18D035681FCC288F00EE1F40 /* ImageTextField.swift */,
+				18D0356A1FCC409B00EE1F40 /* OTPTextField.swift */,
+				1806F5B41FCD358000839FD1 /* SimpleTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		6ACEB531C1F412FDB759951F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F1B79F7EC9099D250887F59 /* Pods_RtooshProvider.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F0660BBE246565F9ED5FF42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD745DAB170B9B11ACD3CDD9 /* Pods-RtooshProvider.debug.xcconfig */,
+				05FA9F94FAFF3A0F4053095B /* Pods-RtooshProvider.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18D035351FCBD41200EE1F40 /* RtooshProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18D035481FCBD41300EE1F40 /* Build configuration list for PBXNativeTarget "RtooshProvider" */;
+			buildPhases = (
+				6102DAE062489CCF0E1064EB /* [CP] Check Pods Manifest.lock */,
+				18D035321FCBD41200EE1F40 /* Sources */,
+				18D035331FCBD41200EE1F40 /* Frameworks */,
+				18D035341FCBD41200EE1F40 /* Resources */,
+				A4D09D67A453F989948D10FB /* [CP] Embed Pods Frameworks */,
+				E7CC628A88E7743F133B8BEA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RtooshProvider;
+			productName = RtooshProvider;
+			productReference = 18D035361FCBD41200EE1F40 /* RtooshProvider.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18D0352E1FCBD41200EE1F40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					18D035351FCBD41200EE1F40 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 18D035311FCBD41200EE1F40 /* Build configuration list for PBXProject "RtooshProvider" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18D0352D1FCBD41200EE1F40;
+			productRefGroup = 18D035371FCBD41200EE1F40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18D035351FCBD41200EE1F40 /* RtooshProvider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18D035341FCBD41200EE1F40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D0354F1FCBFADE00EE1F40 /* Bold.otf in Resources */,
+				18D035511FCBFADE00EE1F40 /* AvenirLTStd-Light.otf in Resources */,
+				18D035441FCBD41300EE1F40 /* LaunchScreen.storyboard in Resources */,
+				1806F5BF1FCD538500839FD1 /* SceduleTableViewCell.xib in Resources */,
+				18D035411FCBD41300EE1F40 /* Assets.xcassets in Resources */,
+				18D118FE1FD1411E00EE3ACF /* ScheduleTimeTableViewCell.xib in Resources */,
+				18B208781FCFB8BC00A84239 /* SreviceListTableViewCell.xib in Resources */,
+				18D035501FCBFADE00EE1F40 /* avenir-lt-65-medium-5969f31f07372.ttf in Resources */,
+				18D118F81FD1216700EE3ACF /* Media.xcassets in Resources */,
+				18D0353F1FCBD41300EE1F40 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6102DAE062489CCF0E1064EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RtooshProvider-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4D09D67A453F989948D10FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RtooshProvider/Pods-RtooshProvider-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BRYXBanner/BRYXBanner.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BRYXBanner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RtooshProvider/Pods-RtooshProvider-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7CC628A88E7743F133B8BEA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RtooshProvider/Pods-RtooshProvider-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18D035321FCBD41200EE1F40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B2087A1FCFCFFA00A84239 /* ServiceHeader.swift in Sources */,
+				18D0356B1FCC409B00EE1F40 /* OTPTextField.swift in Sources */,
+				18B2087C1FCFD6FB00A84239 /* AddService.swift in Sources */,
+				18D035621FCC198800EE1F40 /* RegisterViewController.swift in Sources */,
+				18D0355E1FCC195D00EE1F40 /* LoginViewController.swift in Sources */,
+				1806F5AF1FCD2FAE00839FD1 /* ScheduleViewController.swift in Sources */,
+				18D035571FCBFC3B00EE1F40 /* CustomLabel_Light.swift in Sources */,
+				1806F5B31FCD2FD900839FD1 /* PublicInfoViewController.swift in Sources */,
+				18D035661FCC285E00EE1F40 /* SelectButton.swift in Sources */,
+				18D118FD1FD1411E00EE3ACF /* ScheduleTimeTableViewCell.swift in Sources */,
+				1806F5BE1FCD538500839FD1 /* SceduleTableViewCell.swift in Sources */,
+				1806F5AD1FCD2F9200839FD1 /* ID'sViewController.swift in Sources */,
+				18B208771FCFB8BC00A84239 /* SreviceListTableViewCell.swift in Sources */,
+				18D0353C1FCBD41200EE1F40 /* ViewController.swift in Sources */,
+				1806F5B51FCD358000839FD1 /* SimpleTextField.swift in Sources */,
+				1806F5AA1FCD27DC00839FD1 /* CircleLabel.swift in Sources */,
+				18D035551FCBFC1700EE1F40 /* CustomLabel_bold.swift in Sources */,
+				18D035601FCC196B00EE1F40 /* OTPViewController.swift in Sources */,
+				18D035691FCC288F00EE1F40 /* ImageTextField.swift in Sources */,
+				1806F5B11FCD2FC200839FD1 /* ServiceViewController.swift in Sources */,
+				1806F5BA1FCD474E00839FD1 /* RadioButton.swift in Sources */,
+				18D035641FCC199400EE1F40 /* AccountStatusViewController.swift in Sources */,
+				18D0353A1FCBD41200EE1F40 /* AppDelegate.swift in Sources */,
+				1806F5B81FCD391700839FD1 /* BackView.swift in Sources */,
+				18D035591FCBFC5A00EE1F40 /* CustomLabel_Medium.swift in Sources */,
+				18D118FA1FD13E6F00EE3ACF /* ScheduleTimeViewController.swift in Sources */,
+				18D0355C1FCC18EC00EE1F40 /* CustomButton_Light.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18D0353D1FCBD41300EE1F40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18D0353E1FCBD41300EE1F40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18D035421FCBD41300EE1F40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18D035431FCBD41300EE1F40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18D035461FCBD41300EE1F40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18D035471FCBD41300EE1F40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18D035491FCBD41300EE1F40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD745DAB170B9B11ACD3CDD9 /* Pods-RtooshProvider.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RtooshProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orem.RtooshProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18D0354A1FCBD41300EE1F40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05FA9F94FAFF3A0F4053095B /* Pods-RtooshProvider.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RtooshProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orem.RtooshProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18D035311FCBD41200EE1F40 /* Build configuration list for PBXProject "RtooshProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D035461FCBD41300EE1F40 /* Debug */,
+				18D035471FCBD41300EE1F40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18D035481FCBD41300EE1F40 /* Build configuration list for PBXNativeTarget "RtooshProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D035491FCBD41300EE1F40 /* Debug */,
+				18D0354A1FCBD41300EE1F40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18D0352E1FCBD41200EE1F40 /* Project object */;
+}
