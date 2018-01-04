@@ -14,6 +14,9 @@
         <array key="ArialRoundedMTBold.ttf">
             <string>ArialRoundedMTBold</string>
         </array>
+        <array key="Avenir.ttc">
+            <string>Avenir-Black</string>
+        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -40,7 +43,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gw4-wE-Z3D" customClass="CustomLabel_bold" customModule="RtooshProvider" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Person" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Gw4-wE-Z3D" customClass="CustomLabel_Medium" customModule="RtooshProvider" customModuleProvider="target">
                                         <rect key="frame" x="1.5" y="98" width="48" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -55,7 +58,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Gw4-wE-Z3D" firstAttribute="centerX" secondItem="VJH-aL-Slg" secondAttribute="centerX" id="2XI-BV-dLM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gw4-wE-Z3D" secondAttribute="trailing" constant="2" id="5AN-0s-tWk"/>
                                     <constraint firstAttribute="bottom" secondItem="Bze-TR-V5g" secondAttribute="bottom" id="6Nx-mY-R78"/>
+                                    <constraint firstItem="Gw4-wE-Z3D" firstAttribute="leading" secondItem="VJH-aL-Slg" secondAttribute="leading" constant="1.5" id="D8u-DJ-qKh"/>
                                     <constraint firstAttribute="bottom" secondItem="Gw4-wE-Z3D" secondAttribute="bottom" constant="8.5" id="Kgy-Bm-oI8"/>
                                     <constraint firstItem="Bze-TR-V5g" firstAttribute="leading" secondItem="VJH-aL-Slg" secondAttribute="leading" id="MFU-Iv-Z8M"/>
                                     <constraint firstItem="TnI-Zt-xJQ" firstAttribute="centerX" secondItem="VJH-aL-Slg" secondAttribute="centerX" id="Xvh-ae-gui"/>
@@ -81,14 +86,16 @@
                                             <constraint firstAttribute="height" constant="1" id="rla-np-048"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Biu-DH-XZh">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Biu-DH-XZh">
                                         <rect key="frame" x="0.0" y="0.0" width="34.5" height="62"/>
+                                        <inset key="imageEdgeInsets" minX="7" minY="20" maxX="5" maxY="20"/>
                                         <state key="normal" title="+">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPa-cU-soX">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPa-cU-soX">
                                         <rect key="frame" x="0.0" y="63" width="34.5" height="62"/>
+                                        <inset key="imageEdgeInsets" minX="2" minY="15" maxX="1" maxY="15"/>
                                         <state key="normal" title="-">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -113,9 +120,9 @@
                                     <constraint firstItem="DPa-cU-soX" firstAttribute="top" secondItem="bsH-dd-DAs" secondAttribute="bottom" id="yOb-gv-JdC"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fm-hF-Zo1" customClass="CustomLabel_bold" customModule="RtooshProvider" customModuleProvider="target">
-                                <rect key="frame" x="55.5" y="4" width="250" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="f Q" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fm-hF-Zo1" customClass="CustomLabel_Medium" customModule="RtooshProvider" customModuleProvider="target">
+                                <rect key="frame" x="55.5" y="4" width="250" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -124,9 +131,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZk-41-dt5" customClass="CustomLabel_Light" customModule="RtooshProvider" customModuleProvider="target">
-                                <rect key="frame" x="55.5" y="33" width="250" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="tZk-41-dt5" customClass="CustomLabel_Medium" customModule="RtooshProvider" customModuleProvider="target">
+                                <rect key="frame" x="55.5" y="35.5" width="250" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -178,6 +185,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="nav_barHome" width="1080" height="188"/>
+        <image name="nav_barHome" width="1075" height="182"/>
     </resources>
 </document>

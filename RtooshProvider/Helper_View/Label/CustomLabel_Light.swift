@@ -14,16 +14,20 @@ class CustomLabel_Light: UILabel {
     /*
      // Only override draw() if you perform custom drawing.
      // An empty implementation adversely affects performance during animation.
-     override func draw(_ rect: CGRect) {
-     // Drawing code
-     }
+   
      */
+//    override func draw(_ rect: CGRect) {
+//        // Drawing code
+////        font = UIFont.init(name: "AvenirLTStd-Light", size: CGFloat(FontSize))
+//
+//    }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configure()
     }
     func configure() {
-        font = UIFont.init(name: "AvenirLTStd-Light", size: CGFloat(FontSize))
+        font = UIFont.init(name: "AvenirLTStd-Light", size: font.pointSize)
+//        font = UIFont.boldSystemFont(ofSize: CGFloat(FontSize))
         
     }
     

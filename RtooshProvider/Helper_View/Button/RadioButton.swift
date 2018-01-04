@@ -27,16 +27,24 @@ class RadioButton: UIButton {
        image.image = Selected_Image
         }
     }
-    
+    open var Selected_title : String = "" {
+        didSet {
+            
+            title_lbl.text = Selected_title
+        }
+    }
     
     override func draw(_ rect: CGRect) {
         // Drawing code
-        image.frame =  CGRect.init(x: 16, y: 12, width: (frame.size.width * 14)/100 - 32 , height: (frame.size.width * 14)/100 - 32)
+        image.frame =  CGRect.init(x: 16, y: (frame.size.height - 22)/2 , width: 22  , height: 22 )
         
-         title_lbl.frame =  CGRect.init(x: (frame.size.width * 14)/100 + 12, y: 12, width: frame.size.width - (frame.size.width * 14)/100 + 12 , height: frame.size.height - 12 )
+         title_lbl.frame =  CGRect.init(x: (frame.size.width * 14)/100 + 12, y: 0, width: frame.size.width - (frame.size.width * 14)/100 + 12 , height: frame.size.height  )
         image.image = #imageLiteral(resourceName: "ic_uncheck_service")
         setTitle("", for: .normal)
         title_lbl.text = Title_string
+       title_lbl.font = UIFont.init(name: "AvenirLTStd-Light", size: 15)!
+
+//        title_lbl.font = UIFont.boldSystemFont(ofSize: 17)
         title_lbl.textAlignment = .left
         addSubview(image)
         addSubview(title_lbl)

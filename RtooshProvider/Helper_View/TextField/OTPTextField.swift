@@ -24,7 +24,8 @@ class OTPTextField: UITextField {
     }
     func configure() {
         //        titleLabel?.font = UIFont.init(name: "avenir-lt-65-medium-5969f31f07372", size: 15)!
-        
+		font = UIFont.init(name: "AvenirLT-Medium", size: (font?.pointSize)!)
+
        
         layer.cornerRadius = 4
         layer.borderWidth = 2

@@ -22,7 +22,7 @@ class SelectButton: UIButton {
         configure()
     }
     func configure() {
-//        titleLabel?.font = UIFont.init(name: "avenir-lt-65-medium-5969f31f07372", size: 15)!
+        titleLabel?.font = UIFont.init(name: "AvenirLT-Medium", size: (titleLabel?.font.pointSize)!)!
         
         setBackgroundImage(#imageLiteral(resourceName: "nav_barHome"), for: .normal)
         layer.cornerRadius = frame.size.height/2

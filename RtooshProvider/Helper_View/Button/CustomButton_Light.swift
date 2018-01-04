@@ -17,5 +17,19 @@ class CustomButton_Light: UIButton {
         // Drawing code
     }
     */
+//    override func draw(_ rect: CGRect) {
+//        // Drawing code
+//
+//
+//    }
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        configure()
+    }
+    func configure() {
+        self.titleLabel?.font = UIFont.init(name: "AvenirLTStd-Light", size: (titleLabel?.font.pointSize)!)!
+
+        
+    }
 
 }

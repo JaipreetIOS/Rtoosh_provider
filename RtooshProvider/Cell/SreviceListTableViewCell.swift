@@ -13,6 +13,8 @@ class SreviceListTableViewCell: UITableViewCell {
     @IBOutlet weak var lbltitle: CustomLabel_bold!
     @IBOutlet weak var lblDetail: CustomLabel_Light!
     
+    @IBOutlet weak var btnDelete: UIButton!
+    @IBOutlet weak var btnEdit: UIButton!
     @IBOutlet weak var lblCost: CustomLabel_bold!
     override func awakeFromNib() {
         super.awakeFromNib()
