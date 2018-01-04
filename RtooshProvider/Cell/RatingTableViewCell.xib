@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Unknown constraint types" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="202" id="KGk-i7-Jjw" customClass="RatingTableViewCell" customModule="RtooshProvider" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="202"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="201.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grI-jD-M4U" customClass="BackView" customModule="RtooshProvider" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="304" height="185.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 XXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfV-55-UnL" customClass="CustomLabel_Light" customModule="RtooshProvider" customModuleProvider="target">
+                                <rect key="frame" x="254" y="0.0" width="50" height="30"/>
+                                <color key="backgroundColor" red="0.92540913820000004" green="0.92554211620000004" blue="0.92537993190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="D3Q-Jl-sTa"/>
+                                    <constraint firstAttribute="width" constant="50" id="WmP-2n-ZA3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level of Cleanliness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrj-f0-hqs" customClass="CustomLabel_Medium" customModule="RtooshProvider" customModuleProvider="target">
+                                <rect key="frame" x="8" y="35" width="135.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quality of Service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhW-wj-nl1" customClass="CustomLabel_Medium" customModule="RtooshProvider" customModuleProvider="target">
+                                <rect key="frame" x="8" y="65" width="121" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arrival Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhD-mj-wVM" customClass="CustomLabel_Medium" customModule="RtooshProvider" customModuleProvider="target">
+                                <rect key="frame" x="8" y="95" width="81.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer Feedback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oD0-ZS-XmG" customClass="CustomLabel_Medium" customModule="RtooshProvider" customModuleProvider="target">
+                                <rect key="frame" x="8" y="125" width="138.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No feedback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrJ-wu-7XY" customClass="CustomLabel_Medium" customModule="RtooshProvider" customModuleProvider="target">
+                                <rect key="frame" x="8" y="157" width="288" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="61N-D8-Czc" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="156" y="31.5" width="140" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="61N-D8-Czc" secondAttribute="trailing" id="2bC-Eh-C5Q"/>
+                                    <constraint firstAttribute="height" constant="25" id="7Rv-o4-0My"/>
+                                    <constraint firstAttribute="width" constant="140" id="Pad-ob-NRy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" name="TitleColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYF-1X-Nci" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="156" y="61.5" width="140" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Bsp-ud-Enc"/>
+                                    <constraint firstAttribute="width" constant="140" id="dDE-ZL-nAm"/>
+                                    <constraint firstAttribute="trailing" secondItem="UYF-1X-Nci" secondAttribute="trailing" id="occ-9U-nIq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" name="TitleColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhJ-fG-Txg" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="156" y="91.5" width="140" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="PZW-qr-Ezy"/>
+                                    <constraint firstAttribute="width" constant="140" id="uhI-ju-VAc"/>
+                                    <constraint firstAttribute="trailing" secondItem="fhJ-fG-Txg" secondAttribute="trailing" id="wMU-le-h2v"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" name="TitleColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vbK-Im-GQc" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="156" y="121.5" width="140" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="AE9-Lc-Yqs"/>
+                                    <constraint firstAttribute="width" constant="140" id="eKR-dS-VL7"/>
+                                    <constraint firstAttribute="trailing" secondItem="vbK-Im-GQc" secondAttribute="trailing" id="emf-ca-ZoW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" name="TitleColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QhD-mj-wVM" firstAttribute="leading" secondItem="grI-jD-M4U" secondAttribute="leading" constant="8" id="3Ve-hL-zmy"/>
+                            <constraint firstItem="vbK-Im-GQc" firstAttribute="trailing" secondItem="vbK-Im-GQc" secondAttribute="trailing" id="40I-74-LBJ"/>
+                            <constraint firstItem="CrJ-wu-7XY" firstAttribute="top" secondItem="oD0-ZS-XmG" secondAttribute="bottom" constant="14" id="8lH-wt-HMc"/>
+                            <constraint firstItem="UYF-1X-Nci" firstAttribute="centerY" secondItem="UhW-wj-nl1" secondAttribute="centerY" id="8x7-dN-ARL"/>
+                            <constraint firstItem="vbK-Im-GQc" firstAttribute="trailing" secondItem="vbK-Im-GQc" secondAttribute="trailing" id="AmZ-nv-bkJ"/>
+                            <constraint firstAttribute="trailing" secondItem="vbK-Im-GQc" secondAttribute="trailing" constant="8" id="CcU-ij-k0I"/>
+                            <constraint firstItem="vbK-Im-GQc" firstAttribute="centerY" secondItem="oD0-ZS-XmG" secondAttribute="centerY" id="GvB-cn-2aj"/>
+                            <constraint firstItem="fhJ-fG-Txg" firstAttribute="centerY" secondItem="QhD-mj-wVM" secondAttribute="centerY" id="JGc-K9-8fl"/>
+                            <constraint firstAttribute="trailing" secondItem="wfV-55-UnL" secondAttribute="trailing" id="N6T-qH-jHI"/>
+                            <constraint firstItem="UhW-wj-nl1" firstAttribute="leading" secondItem="grI-jD-M4U" secondAttribute="leading" constant="8" id="NzK-iC-jan"/>
+                            <constraint firstAttribute="trailing" secondItem="fhJ-fG-Txg" secondAttribute="trailing" constant="8" id="Oyq-Yt-eSk"/>
+                            <constraint firstItem="oD0-ZS-XmG" firstAttribute="leading" secondItem="grI-jD-M4U" secondAttribute="leading" constant="8" id="R0J-bS-ER1"/>
+                            <constraint firstAttribute="trailing" secondItem="61N-D8-Czc" secondAttribute="trailing" constant="8" id="a4I-Ef-ah6"/>
+                            <constraint firstItem="UhW-wj-nl1" firstAttribute="top" secondItem="wrj-f0-hqs" secondAttribute="bottom" constant="12" id="e3c-N9-BhO"/>
+                            <constraint firstAttribute="bottom" secondItem="CrJ-wu-7XY" secondAttribute="bottom" constant="12.5" id="g2n-WS-Tf3"/>
+                            <constraint firstAttribute="trailing" secondItem="UYF-1X-Nci" secondAttribute="trailing" constant="8" id="jEs-X5-Do6"/>
+                            <constraint firstItem="wrj-f0-hqs" firstAttribute="top" secondItem="grI-jD-M4U" secondAttribute="top" constant="35" id="jSH-Mn-Ek9"/>
+                            <constraint firstItem="CrJ-wu-7XY" firstAttribute="leading" secondItem="grI-jD-M4U" secondAttribute="leading" constant="8" id="k87-OU-M1I"/>
+                            <constraint firstItem="QhD-mj-wVM" firstAttribute="top" secondItem="UhW-wj-nl1" secondAttribute="bottom" constant="12" id="kbV-MQ-8r6"/>
+                            <constraint firstItem="wrj-f0-hqs" firstAttribute="leading" secondItem="grI-jD-M4U" secondAttribute="leading" constant="8" id="lo7-Pw-FUI"/>
+                            <constraint firstItem="61N-D8-Czc" firstAttribute="centerY" secondItem="wrj-f0-hqs" secondAttribute="centerY" id="m0J-1q-nRx"/>
+                            <constraint firstItem="vbK-Im-GQc" firstAttribute="trailing" secondItem="vbK-Im-GQc" secondAttribute="trailing" id="oPe-qw-5eW"/>
+                            <constraint firstItem="wfV-55-UnL" firstAttribute="top" secondItem="grI-jD-M4U" secondAttribute="top" id="pGY-6G-rcb"/>
+                            <constraint firstItem="oD0-ZS-XmG" firstAttribute="top" secondItem="QhD-mj-wVM" secondAttribute="bottom" constant="12" id="sWT-XH-OjB"/>
+                            <constraint firstAttribute="trailing" secondItem="CrJ-wu-7XY" secondAttribute="trailing" constant="8" id="so9-H0-ejD"/>
+                            <constraint firstItem="fhJ-fG-Txg" firstAttribute="trailing" secondItem="fhJ-fG-Txg" secondAttribute="trailing" id="w2e-bo-24u"/>
+                            <constraint firstItem="UYF-1X-Nci" firstAttribute="trailing" secondItem="UYF-1X-Nci" secondAttribute="trailing" id="wct-Lu-M3x"/>
+                            <constraint firstItem="fhJ-fG-Txg" firstAttribute="trailing" secondItem="fhJ-fG-Txg" secondAttribute="trailing" id="yzV-XA-DCE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.92540913820000004" green="0.92554211620000004" blue="0.92537993190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="grI-jD-M4U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="12l-CX-y5o"/>
+                    <constraint firstItem="grI-jD-M4U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="D2b-xa-amW"/>
+                    <constraint firstAttribute="bottom" secondItem="grI-jD-M4U" secondAttribute="bottom" constant="8.5" id="b2X-7l-Mtw"/>
+                    <constraint firstAttribute="trailing" secondItem="grI-jD-M4U" secondAttribute="trailing" constant="8" id="gW5-6x-0QM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblDate" destination="wfV-55-UnL" id="w9i-eZ-Tqe"/>
+                <outlet property="lblFeedback" destination="CrJ-wu-7XY" id="38e-en-IE3"/>
+                <outlet property="viewAT" destination="fhJ-fG-Txg" id="2DI-yB-bbg"/>
+                <outlet property="viewCF" destination="vbK-Im-GQc" id="XTc-pg-Ogq"/>
+                <outlet property="viewLOC" destination="61N-D8-Czc" id="zer-v1-z3e"/>
+                <outlet property="viewQOS" destination="UYF-1X-Nci" id="Bv6-38-pgk"/>
+            </connections>
+            <point key="canvasLocation" x="102" y="197"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="TitleColor">
+            <color red="0.93500000240000003" green="0.3659999967" blue="0.4930000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -2,16 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>avenir-lt-65-medium-5969f31f07372.ttf</string>
-		<string>AvenirLTStd-Light.otf</string>
-		<string>Bold.oft</string>
-	</array>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Rtoosh Provider</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -26,8 +20,28 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Will you allow this app to always know your location?</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This application access your images in library.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>avenir-lt-65-medium-5969f31f07372.ttf</string>
+		<string>AvenirLTStd-Light.otf</string>
+		<string>Bold.oft</string>
+		<string>Rtoosf-Bold.otf</string>
+		<string>Rtoosf-Medium.ttf</string>
+		<string>Rtoosf-Normal.otf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

@@ -14,17 +14,25 @@ class CustomLabel_bold: UILabel {
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+   
+     */
+//    override func draw(_ rect: CGRect) {
+//        // Drawing code
+////        font = UIFont.init(name: "Avenir-Black", size: CGFloat(FontSize))
+//        print(FontSize)
+////        font = UIFont.init(name: "Avenir-Black", size: CGFloat(FontSize))
+//
+//
+//    }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configure()
     }
     func configure() {
-        font = UIFont.init(name: "Bold", size: CGFloat(FontSize))
-        
+       
+//        font = UIFont.boldSystemFont(ofSize: 17)
+        font = UIFont.init(name: "Avenir-Black", size: font.pointSize)
+
     }
 
 }

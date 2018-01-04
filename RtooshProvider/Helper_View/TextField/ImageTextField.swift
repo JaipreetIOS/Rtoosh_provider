@@ -46,19 +46,31 @@ class ImageTextField: UITextField {
         
         addSubview(image_back)
         addSubview(image)
+
         
         if placeholder == "Phone Number"{
             
 //             image.frame =  CGRect.init(x: 16, y: 12, width: (frame.size.width * 14)/100 - 32 , height: (frame.size.width * 14)/100 - 32)
             
                   lbl.frame =  CGRect.init(x: (frame.size.width * 14)/100, y: 0, width: (frame.size.width * 14)/100 , height: frame.size.height)
+			if text == "0"{
+				text = ""
+				image.frame =  CGRect.init(x: 8, y: 10, width: 25 , height: 25)
+
+			}
+
             lbl.text = "+966"
             lbl.textAlignment = .center
+            lbl.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
             addSubview(lbl)
             
             lbl_line.frame =  CGRect.init(x: ((frame.size.width * 14)/100)*2, y: 4, width: 1 , height: frame.size.height - 8)
             lbl_line.text = ""
-            lbl_line.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+           
+                // Fallback on earlier versions
+                lbl_line.backgroundColor = #colorLiteral(red: 0.951546371, green: 0.9255756736, blue: 0.9337655902, alpha: 1)
+
+            
             addSubview(lbl_line)
             padding = UIEdgeInsets(top: 0, left: (frame.size.width * 14)/100 + 10  + (frame.size.width * 14)/100, bottom: 0, right: 5)
 
@@ -78,8 +90,11 @@ class ImageTextField: UITextField {
         layer.cornerRadius = 4
         layer.borderColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         layer.borderWidth = 1
-        backgroundColor = #colorLiteral(red: 0.8913388325, green: 0.8913388325, blue: 0.8913388325, alpha: 1)
+        backgroundColor = #colorLiteral(red: 0.951546371, green: 0.9255756736, blue: 0.9337655902, alpha: 1)
         layer.masksToBounds = true
-    }
+		font = UIFont.init(name: "AvenirLT-Medium", size: (font?.pointSize)!)
+
+
+		   }
 
 }

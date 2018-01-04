@@ -10,14 +10,20 @@
 
 import UIKit
 
-class ScheduleViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
+
+var Register_Schedule : NSMutableDictionary! = [:]
+
+
+
+class ScheduleViewController: UIViewController , UITableViewDelegate , UITableViewDataSource , UITextFieldDelegate {
 
     let Arr_title = ["Maximum persons per order" , "Maximum service per order"]
     let Arr_detail = ["How much persons you want to surve per order" ,  "How much services you want to provide per order"]
     let Arr_person = ["Person" ,  "Service"]
     
-    let Arr_count = [0 ,  0]
+    let Arr_count : NSMutableArray = [1 ,  1]
 
+    @IBOutlet weak var txtMin: SimpleTextField!
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -43,11 +49,53 @@ class ScheduleViewController: UIViewController , UITableViewDelegate , UITableVi
         cell.lblDetail.text = Arr_detail[indexPath.row]
         cell.lblPerson.text = Arr_person[indexPath.row]
         cell.lblPersonCount.text = "\(Arr_count[indexPath.row])"
+        cell.btnAdd.addTarget(self, action: #selector(self.Add(_:)), for: .touchDown)
+        cell.btnAdd.tag = indexPath.row
+        cell.btnSub.addTarget(self, action: #selector(self.Sub(_:)), for: .touchDown)
+        cell.btnSub.tag = indexPath.row
+        
+        if indexPath.row == 0{
+            Register_Schedule.setValue("\(Arr_count[indexPath.row])", forKey: "max_persons")
+
+        }
+        else{
+            Register_Schedule.setValue("\(Arr_count[indexPath.row])", forKey: "max_services")
+
+        }
+        
+
         return cell
         
         
     }
 
+    @IBAction func Add(_ sender: UIButton) {
+        var i = Arr_count[sender.tag] as! Int
+
+        i += 1
+
+        Arr_count.replaceObject(at: sender.tag, with: i)
+        tableView.reloadRows(at: [IndexPath.init(row: sender.tag, section: 0)], with: .none)
+        
+        
+        
+    }
+    @IBAction func Sub(_ sender: UIButton) {
+        var i = Arr_count[sender.tag] as! Int
+        if i != 1{
+        i -= 1
+        
+        Arr_count.replaceObject(at: sender.tag, with: i)
+        tableView.reloadRows(at: [IndexPath.init(row: sender.tag, section: 0)], with: .none)
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        Register_Schedule.setValue(txtMin.text!, forKey: "min_order")
+
+    }
+    
+    
     /*
     // MARK: - Navigation
 

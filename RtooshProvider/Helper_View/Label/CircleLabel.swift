@@ -22,8 +22,8 @@ class CircleLabel: UILabel {
         configure()
     }
     func configure() {
-        font = UIFont.init(name: "avenir-lt-65-medium-5969f31f07372", size: CGFloat(17))
-        
+        self.font = UIFont.init(name: "AvenirLT-Medium", size: font.pointSize)
+
         layer.cornerRadius = frame.size.height/2
         layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         layer.borderWidth = 2

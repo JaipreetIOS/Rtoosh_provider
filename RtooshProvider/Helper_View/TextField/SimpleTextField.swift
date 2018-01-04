@@ -36,13 +36,12 @@ class SimpleTextField: UITextField {
     func configure() {
         //        titleLabel?.font = UIFont.init(name: "avenir-lt-65-medium-5969f31f07372", size: 15)!
         
-        if #available(iOS 11.0, *) {
-            backgroundColor = UIColor(named: "TextBg")
-        } else {
+       
             // Fallback on earlier versions
             backgroundColor = #colorLiteral(red: 0.951546371, green: 0.9255756736, blue: 0.9337655902, alpha: 1)
+		font = UIFont.init(name: "AvenirLT-Medium", size: (font?.pointSize)!)
 
-        }
+        
         layer.cornerRadius = 4
         layer.borderWidth = 2
         layer.borderColor = #colorLiteral(red: 0.9010945431, green: 0.8813405367, blue: 0.8900866399, alpha: 1)
