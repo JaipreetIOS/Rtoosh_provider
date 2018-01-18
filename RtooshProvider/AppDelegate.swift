@@ -13,7 +13,7 @@ import GooglePlaces
 import UserNotificationsUI
 import UserNotifications
 import CoreLocation
-
+import NVActivityIndicatorView
 
 var dataModel = DataModel()
 var CheckTextField = TextFieldCheck()
@@ -50,7 +50,7 @@ var Notification_publicInfo : String = "SavePublicInfoToRegister"
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate , CLLocationManagerDelegate , UNUserNotificationCenterDelegate   {
+class AppDelegate: UIResponder, UIApplicationDelegate , CLLocationManagerDelegate , UNUserNotificationCenterDelegate , NVActivityIndicatorViewable  {
 
     var window: UIWindow?
     let locationManager = CLLocationManager()
@@ -138,7 +138,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , CLLocationManagerDelegat
         //            name=Himanshu kumar&email=himanshukumar@gmail.com&password=123456
         
         dataModel.PostApi(Url: "apis/getUser", dict: Dict as NSDictionary, withCompletionHandler: { (Data, error) in
-            
+
             if error == "Error"{
 //                dataModel.ToastAlertController(Message: "", alertMsg: "Something worng!, Try after sometime")
 

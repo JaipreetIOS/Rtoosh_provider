@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
-class ViewController: UIViewController , UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
+class ViewController: UIViewController , UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout , NVActivityIndicatorViewable{
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var view3: UIView!
 	@IBOutlet weak var btnSkip: CustomButton_Light!
@@ -28,11 +29,17 @@ class ViewController: UIViewController , UICollectionViewDelegate , UICollection
         btnSkip.layer.cornerRadius = 15
         NotificationCenter.default.addObserver(self, selector: #selector(self.methodOfReceivedNotification(notification:)), name: Notification.Name(NotificationUserOnline), object: nil)
 
+		if UserDefaults.standard.value(forKey: "CurrentUserData") is NSDictionary
+		{
+
+
+   self.startAnimating(CGSize(width: 30, height:30), message: "Loading..", type: NVActivityIndicatorType.ballClipRotateMultiple)
+		}
         // Do any additional setup after loading the view, typically from a nib.
     }
     @objc func methodOfReceivedNotification(notification: Notification){
         
-        
+        self.stopAnimating()
         let vc =  storyboard?.instantiateViewController(withIdentifier: "MyNavigationController") as! MyNavigationController
         present(vc, animated: true, completion: nil)
         

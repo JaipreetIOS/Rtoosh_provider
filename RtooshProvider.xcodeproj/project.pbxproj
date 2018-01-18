@@ -760,6 +760,7 @@
 				CODE_SIGN_ENTITLEMENTS = RtooshProvider/RtooshProvider.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R2J9P4579G;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = RtooshProvider/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -778,6 +779,7 @@
 				CODE_SIGN_ENTITLEMENTS = RtooshProvider/RtooshProvider.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R2J9P4579G;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = RtooshProvider/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
